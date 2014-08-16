@@ -9,19 +9,19 @@
               <div style="text-align: center; color: gray;"></div>
             </form>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <input class="form-control" type="email" id="email" placeholder="Email" value="{{email}}">
             <span class='errors'></span>
-          </div>
+          </div> -->
           <div class="form-group">
-            <input class="form-control" type="text" id="firstName" placeholder="First Name" value="{{firstName}}">
+            <input class="form-control" type="text" id="name" placeholder="Name" value="{{firstName}}">
             <span class='errors'></span>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <input class="form-control" type="text" id="lastName" placeholder="Last Name" value="{{lastName}}">
             <span class='errors'></span>
           </div>
-          <hr />
+          <hr /> -->
           <div class="form-group">
             <input class="form-control" type="text" id="location" placeholder="Home Location (optional)" value="{{location}}">
           </div>
@@ -29,14 +29,17 @@
             <textarea class="form-control" type="text" id="bio" placeholder="Bio (optional)">{{bio}}</textarea>
           </div>
           <div class="form-group">
-            <input class="form-control" type="text" id="url" placeholder="URL (optional)" value="{{url}}">
+            <textarea class="form-control" type="text" id="breed" placeholder="Breed">{{breed}}</textarea>
           </div>
           <div class="form-group">
-            <input class="form-control" type="text" id="twitterHandle" placeholder="Twitter Handle (optional)" value="{{twitterHandle}}">
+            <textarea class="form-control" type="text" id="age" placeholder="Age">{{age}}</textarea>
           </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="size" placeholder="Size">{{bio}}</textarea>
+          </div>
+
           <a class='btn btn-primary done'><i class='icon-ok'></i> done</a>
         </div>
-
         <div class="col col-lg-6">
           <h2>Preview Profile</h2>
           {{> userCard }}

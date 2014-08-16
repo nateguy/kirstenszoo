@@ -1,0 +1,1 @@
+@Pets = new Meteor.Collection 'pets'
