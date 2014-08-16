@@ -15,3 +15,9 @@ handlebar-helpers
 accounts-base
 accounts-password
 accounts-ui
+Dropzonejs
+collectionFS
+cfs-gridfs
+cfs-filesystem
+simple-form
+profile
