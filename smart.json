@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "iron-router": {},
+    "bootstrap-3": {},
+    "Dropzonejs": {},
+    "collectionFS": {},
+    "ui-dropped-event": {},
+    "foundation": {},
+    "handlebar-helpers": {},
+    "collection-api": {}
+  }
+}

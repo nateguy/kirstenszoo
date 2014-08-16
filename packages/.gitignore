@@ -1,0 +1,49 @@
+/iron-router
+/iron-layout
+/blaze-layout
+/iron-core
+/iron-dynamic-template
+<<<<<<< HEAD
+/bootstrap-3
+=======
+/foundation
+<<<<<<< HEAD
+/handlebar-helpers
+=======
+>>>>>>> d4343bc56d0fc67966539fce32c4107d726b5531
+/Dropzonejs
+/collectionFS
+/cfs-base-package
+/cfs-file
+/cfs-collection
+/cfs-collection-filters
+/cfs-access-point
+/cfs-worker
+/cfs-upload-http
+/cfs-filesaver
+/cfs-storage-adapter
+/http-methods
+/numeral
+/data-man
+/emitter
+/cfs-upload-ddp
+/cfs-tempstore
+/http-publish
+/cfs-gridfs
+/power-queue
+/reactive-list
+/cfs-graphicsmagick
+/cfs-ejson-file
+/cfs-filesystem
+/reactive-property
+/micro-queue
+/ui-dropped-event
+<<<<<<< HEAD
+/foundation
+=======
+>>>>>>> 9c7d0938cb86b420d899ebd2d14f14ac9f6b20d8
+>>>>>>> d4343bc56d0fc67966539fce32c4107d726b5531
+<<<<<<< HEAD
+=======
+/collection-api
+>>>>>>> dadac63f370358c0ae2792b3ae01f00753f6fb33
