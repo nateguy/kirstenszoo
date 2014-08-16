@@ -1,9 +1,6 @@
 Router.map ->
-
-
   @route 'main', {path: '/'}
-
-  @route 'addanimal'
+  @route 'addanimal',
     path: 'animals/add'
-  @route 'editanimal'
+  @route 'editanimal',
     path: 'animals/edit'
