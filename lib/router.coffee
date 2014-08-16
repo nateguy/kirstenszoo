@@ -1,6 +1,12 @@
 Router.map ->
-  @route 'main', {path: '/'}
+  @route 'login'
+  @route 'main',
+    path: '/',
+    waitOn: -> Meteor.subscribe "animals"
   @route 'addanimal',
-    path: 'animals/add'
+    waitOn: -> Meteor.subscribe "animals"
+  @route 'registration'
   @route 'editanimal',
     path: 'animals/edit'
+  @route 'blog',
+    waitOn: -> Meteor.subscribe "blog"

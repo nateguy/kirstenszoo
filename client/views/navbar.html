@@ -1,3 +1,46 @@
+
 <template name="navbar">
-Nav Bar
+
+  <nav role="navigation" class="navbar-custom">
+  <div class="container-fluid">
+
+  <!--  <div class="container"> -->
+
+
+      <!-- Static navbar -->
+      <div class="navbar" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <div class="navbar-brand"><a href="{{ pathFor 'main' }}">Logo</a></div>
+          </div>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+              <li class="animals"><a href="{{ pathFor 'animals' }}">Animals</a></li>
+
+              <li class="blog"><a href="{{ pathFor 'blog' }}">Blog</a></li>
+
+              <li class="about"><a href="{{ pathFor 'about' }}">About Us</a></li>
+              <li class="login"><a href="{{ pathFor 'login' }}">Login</a></li>
+              <!-- <li><a href="../navbar-fixed-top/">Fixed top</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+
+      </div>
+
+   <!-- /container -->
+  </nav>
+
 </template>

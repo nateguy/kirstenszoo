@@ -1,0 +1,31 @@
+<template name="login">
+<div class="padding">
+
+
+
+              <form class="form-signin" role="form" id="login-form">
+
+                <h2 class="form-signin-heading">Please sign in</h2>
+
+
+
+                  <input type="email" class="form-control input-lg" placeholder="Email address" id="accounts-email" required autofocus>
+
+
+                  <input class="form-control input-lg" type="password" placeholder="Password" id="accounts-password" required>
+
+                    <div class="checkbox">
+
+                       <input type="checkbox" value="remember-me"> Remember me
+
+                    </div>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit" id="loginbutton" value="login">Sign in</button>
+              </form>
+            <div class="other-links">
+                <a href="{{ pathFor 'registration' }}">Register</a><br>
+                <a href="#">Forgot password</a>
+            </div>
+
+</div>
+
+</template>

@@ -1,0 +1,65 @@
+<template name="main">
+
+  <div class="main">
+   <script>
+  $(document).ready(function(){
+    $('#animals-carousel').carousel();
+  });
+  </script>
+    <div id="animals-carousel" class="carousel slide" data-interval=3000 data-ride="carousel">
+      <div class="carousel-inner">
+      {{#with firstanimal}}
+
+          <div class="item active">
+                {{>animal_image}}
+                {{>animal_text}}
+          </div>
+
+
+
+      {{/with}}
+
+      {{#each allanimals}}
+
+          <div class="item">
+                {{>animal_image}}
+                {{>animal_text}}
+          </div>
+
+
+      {{/each}}
+      </div>
+
+<!--
+      <a class="left carousel-control" href="#animals-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>s
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a> -->
+    </div>
+  </div>
+</template>
+
+<template name="animal_image">
+  <img src="{{image}}">
+</template>
+
+<template name="animal_text">
+  <div class="carousel-caption">
+    <div class="mainbuttons">
+      <button>Meet {{name}}</button>
+    </div>
+    <div class="mainbuttons">
+      <a>Continue to Site</a>
+    </div>
+  </div>
+</template>
+
+<template name="animals">
+  <div class="item">
+
+    <img src="{{image}}">
+
+  </div>
+</template>
