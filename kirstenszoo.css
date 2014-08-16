@@ -1,1 +1,27 @@
 /* CSS declarations go here */
+
+
+body {
+   background-color: #0BE8C2;
+   font-family: "Times New Roman", Times, serif;
+
+}
+
+.customNavigation {
+  text-align: center;
+}
+
+ .item {
+  width: 25%; 
+  height: 25%;
+  text-align: center;
+}
+
+.paypal {
+  text-align: center;
+}
+
+.similar_animals {
+  text-align: center;
+}
+

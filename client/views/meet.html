@@ -1,0 +1,54 @@
+<template name="meet">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-9 col-md-10 col-md-offset-1">
+<center>
+ {{> Carousel}}
+</center>
+    <div class='userstory'>
+      <h2>{{petname}}'s Story</h2>
+     <div class="petinfo">
+      <h3>Animal Profile</h3>
+      <ol>
+        <ol>Name: {{petname}}</ol>
+        <ol>Gender: {{petgender}}</ol>
+        <ol>Breed: {{petbreed}}</ol>
+        <ol>Age: {{petage}}</ol>
+        <ol>Size: {{petsize}}</ol>
+        <ol>Location: {{petlocation}}</ol>
+      </ol>
+     </div>
+     <div class="story">
+       <label><h2>Story</h2></label>
+       <textarea rows="10" cols="50" id="body" value="" class="input-xlarge"  readonly>{{body}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda exercitationem, facere, quaerat perspiciatis odio saepe itaque sequi dolorem provident. Animi quas obcaecati laboriosam consectetur impedit commodi quasi quo maiores sapiente. 
+       </textarea>
+     </div>
+   </div>
+
+   <div class="meet">
+    <h2>Meet {{petname}}</h2>
+
+    {{> meet_submit}}
+   </div>
+  </div>
+
+  <div class="paypal">
+  <h3>Please Consider a Donation to Support Us!</h3>
+    <p><button><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif"></button></p>
+  </div>
+  <div class="similar_animals">
+    <h2>Similar Animals for Foster/Adoption: </h2>
+    <center>
+      {{> Carousel2}}
+    </center>
+  </div>
+
+</div>
+
+</div>
+
+</template>
+
