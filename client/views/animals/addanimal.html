@@ -1,5 +1,50 @@
 <template name="addanimal">
-  <div>
-  Addfdsfdsfds
+  <div id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6">
+          <h2>Edit Profile</h2>
+          <div class="form-group">
+            <form action="#" id="dropzone" class="dropzone">
+              <div style="text-align: center; color: gray;"></div>
+            </form>
+          </div>
+          <!-- <div class="form-group">
+            <input class="form-control" type="email" id="email" placeholder="Email" value="{{email}}">
+            <span class='errors'></span>
+          </div> -->
+          <div class="form-group">
+            <input class="form-control" type="text" id="name" placeholder="Name" value="{{firstName}}">
+            <span class='errors'></span>
+          </div>
+          <!-- <div class="form-group">
+            <input class="form-control" type="text" id="lastName" placeholder="Last Name" value="{{lastName}}">
+            <span class='errors'></span>
+          </div>
+          <hr /> -->
+          <div class="form-group">
+            <input class="form-control" type="text" id="location" placeholder="Home Location (optional)" value="{{location}}">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="bio" placeholder="Bio (optional)">{{bio}}</textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="breed" placeholder="Breed">{{breed}}</textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="age" placeholder="Age">{{age}}</textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="size" placeholder="Size">{{bio}}</textarea>
+          </div>
+
+          <a class='btn btn-primary done'><i class='icon-ok'></i> done</a>
+        </div>
+        <div class="col col-lg-6">
+          <h2>Preview Profile</h2>
+          {{> userCard }}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
