@@ -10,3 +10,9 @@ iron-router
 coffeescript
 less
 bootstrap
+Dropzonejs
+collectionFS
+cfs-gridfs
+cfs-filesystem
+simple-form
+profile

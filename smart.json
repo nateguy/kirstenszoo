@@ -7,6 +7,8 @@
     "ui-dropped-event": {},
     "foundation": {},
     "handlebar-helpers": {},
-    "collection-api": {}
+    "collection-api": {},
+    "simple-form": {},
+    "profile": {}
   }
 }
