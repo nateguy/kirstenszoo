@@ -42,24 +42,17 @@
 </template>
 
 <template name="animal_image">
-  <img src="{{image}}">
+  <img src="{{link}}">
 </template>
 
 <template name="animal_text">
   <div class="carousel-caption">
     <div class="mainbuttons">
-      <button>Meet {{name}}</button>
+      <button id="gotoPet">Meet {{name}}</button>
+
     </div>
     <div class="mainbuttons">
       <a>Continue to Site</a>
     </div>
-  </div>
-</template>
-
-<template name="animals">
-  <div class="item">
-
-    <img src="{{image}}">
-
   </div>
 </template>
