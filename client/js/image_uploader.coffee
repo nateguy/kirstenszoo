@@ -1,6 +1,7 @@
 Meteor.subscribe('pets')
 Meteor.subscribe('picture')
 Meteor.subscribe('images')
+
 Template.addanimal.helpers
   name: -> Meteor.pets.name
   gender: -> Meteor.pets.gender
@@ -40,14 +41,13 @@ Template.addanimal.rendered = () ->
           else
             console.log "this is here"
             console.log imageId = fileObj._id
-
         done()
 
 Template.userCard.helpers
   profileImage:  ->
     # if Meteor.user()
-      imgUrl = Images.findOne(Pets.imageId).url()
-      console.log imageTag = "<img src='#{imgUrl}' />"
+      imgUrl = Images.findOne(_id: imageId).url()
+      imageTag = "<img src='#{imgUrl}' />"
 
 Template.addanimal.events
   'click .done': ->
@@ -57,12 +57,11 @@ Template.addanimal.events
     breed = document.getElementById("breed").value
     age = document.getElementById("age").value
     size = document.getElementById("size").value
+    imgUrl = Images.findOne(_id: imageId).url()
+    imageTag = "<img src='#{imgUrl}' />"
+    Pets.insert({name : name, location : location, biography : bio, Breed : breed, Age : age, size : size, photo : imageId, link : imageTag})
 
 
-    Pets.insert({name : name, location : location, biography : bio, Breed : breed, Age : age, size : size, photo : imageId })
-
-    imgUrl = Images.findOne(_id: '7GMAbtz4TEnBKXQ9M').url()
-    console.log imageTag = "<img src='#{imgUrl}' />"
 
 
 
